@@ -1,0 +1,114 @@
+.Content__raffles {
+    padding: 60px 0px;
+}
+.Content__raffles--container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+.Content__raffles--raffleCard {
+    padding: 30px;
+    padding-top: 60px;
+    border: 1px solid var(--borderRaffleYellow);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Content__raffles--raffleCard-foundation {
+    text-align: center;
+    margin-bottom: 5px;
+}
+.Content__raffles--raffleCard-foundation p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+}
+.Content__raffles--raffleCard-name {
+    text-align: center;
+}
+.Content__raffles--raffleCard-name h4 {
+    font-family: 'Inter', sans-serif;
+    color: var(--textProductCardGray);
+    font-size: 40px;
+    font-weight: 700;
+}
+.Content__raffles--raffleCard-image {
+    margin-bottom: 5px;
+}
+.Content__raffles--raffleCard-image img {
+    margin-top: -60px;
+    max-width: 100%;
+}
+.Content__raffles--raffleCard-date {
+    margin-bottom: 20px;
+}
+.Content__raffles--raffleCard-date p {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--dateTextProductGray);
+}
+.Content__raffles--raffleCard-numbers {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+.raffles__raffleCard--numbers-number {
+    width: 40px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background-color: var(--themeSecundary);
+}
+.raffles__raffleCard--numbers-number p {
+    color: var(--numberTextProduct);
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+}
+.Content__raffles--raffleCard-numAmount {
+    max-width: 230px;
+    width: 100%;
+    height: 46px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--topBarYellow);
+    margin-bottom: 15px;
+}
+.Content__raffles--raffleCard-numAmount p {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+}
+.Content__raffles--raffleCard-availableNumbers p {
+    color: var(--dateTextProductGray);
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* RESPONSIVE */
+
+@media(max-width: 575px) {
+    .Content__raffles--raffleCard-image img {
+        margin-top: -30px;
+    }
+    .Content__raffles--raffleCard {
+        padding: 20px;
+    }
+}
+@media(max-width: 500px) {
+    .Content__raffles--container {
+        grid-template-columns: repeat(1,1fr) !important;
+    }
+}

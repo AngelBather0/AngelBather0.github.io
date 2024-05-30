@@ -1,0 +1,109 @@
+.Header__topbar {
+    height: 40px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--topBarYellow);
+}
+.Header__topbar--text p {
+    font-size: 14px;
+    font-weight: 400;
+}
+.Header__topbar--text p strong {
+    font-weight: 700;
+}
+.Header__bottom {
+    padding-top: 28px;
+}
+.Header__bottom--container {
+    display: grid;
+    grid-template-columns: 308px 1fr 270px;
+    gap: 20px;
+}
+.Header__bottom--logo img {
+    max-width: 308px;
+    width: 100%;
+    margin-top: -28px;
+    margin-left: -32px;
+}
+.Header__bottom--navbar ul {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+}
+.Header__bottom--navbar ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    color: #fff;
+    font-size: 14px;
+    transition: .3s ease-in-out;
+}
+.Header__bottom--navbar ul li a:hover {
+    color: var(--textYellow);
+    transition: .3s ease-in-out;
+}
+.Header__bottom--actions {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+.Header__bottom--actions-action {
+    cursor: pointer;
+}
+.Header__bottom--actions-action a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.Header__bottom--actions-action span {
+    color: var(--textYellow);
+    font-size: 14px;
+}
+.Header__bottom--mobileBars {
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.Header__bottom--mobileBars img {
+    max-width: 32px;
+    width: 100%;
+    cursor: pointer;
+}
+
+/* RESPONSIVE */
+
+@media(max-width: 1200px) {
+    .Header__bottom--navbar {
+        display: none;
+    }
+    .Header__bottom--container {
+        grid-template-columns: 250px 1fr 32px;
+    }
+    .Header__bottom--actions {
+        justify-content: center;
+    }
+    .Header__bottom--mobileBars {
+        display: flex;
+    }
+}
+@media(max-width: 600px) {
+    .Header__topbar--text p {
+        font-size: 12px;
+    }
+    .Header__bottom--container {
+        grid-template-columns: 200px 1fr 32px;
+    }
+    .Header__bottom--actions-action span {
+        display: none;
+    }
+    .Header__bottom--logo img {
+        max-width: 200px;
+        margin-left: -25px;
+    }
+}
